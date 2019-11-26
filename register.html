@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>TODO</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="LOGO.png" alt="LOGO">
+        <div class="nav">
+            <ul class="navbar">
+                <list><a class="Active" href="index.html">HOME</a></list>
+                <list><a class="Active" href="login.html">LOG IN</a></list>
+                <list><a class="Active" href="register.html">REGISTER</a></list>
+                <list><a class="Active" href="#">PROFILE</a></list>
+
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="regform" action="index.html" name="myform">
+            <label for="usrname">Username *</label>
+            <input type="text" id="usrname" name="usrname" placeholder="Pick a username.." required>
+
+            <label for="psw">Password *</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Pick a password.." required>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+            <label action="/action_page.php">Date of birth *</label>
+            <input type="date" id="bday" name="bday" required>
+
+            <label class="dropdown" for="country">Country</label>
+            <select id="country" name="country">
+              <option value="sweden">Sweden</option>
+              <option value="spain">Spain</option>
+              <option value="italy">Italy</option>
+                <option value="Australia" >Australia</option>
+            </select>
+            <br>
+            <br>
+
+            <label class="dropdown">Purpose of use</label>
+            <select class="dropdown" for="work">
+                    <option value="Work">Work</option>
+                    <option value="Other">Other</option>
+                    </select>
+
+            <div class="popup" onclick="popFunction()"><a class="b">I have read and accept the</a> Terms and Conditions: * <input type="checkbox" required>
+                <span class="popuptext" id="myPopup">Terms and conditions are a set of rules and statements that possible users of your service will have to follow and agree to if they wish to use the service. Establishing terms and conditions is an important aspect of business, and any time you are providing a service to other people or organizations, you should require their acceptance of your terms and conditions. In order to write good terms and conditions, you will have to understand when they are useful, what types of provisions will apply to your situation, where they should be located, and how they will be accessed. Once you have a good grasp of your personal situation, you will begin writing the various provisions and clauses that will make up your terms and conditions. Follow the directions below to create a personalized set of terms and conditions. </span>
+            </div>
+
+            <input type="submit" value="Save" onclick="checkCookie()">
+            <input type="reset" value="Reset" onclick="resetFunction()">
+
+
+
+        </form>
+
+
+    </div>
+
+    <section>
+        <div class="first">
+            <p class="home_text">THIS IS THE HOME PAGE</p>
+        </div>
+
+    </section>
+
+    <script src="functions.js"></script>
+
+    <div class="footer">
+        <img class="copyright" src="photos/copyright.png" alt="copyright">
+
+        <div>
+            <a href="https://www.facebook.com"> <img class="social" src="photos/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img class="social" src="photos/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com"> <img class="social" id="bn" src="photos/twitter.png" alt="twitter"></a>
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
