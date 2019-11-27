@@ -5,7 +5,7 @@
 
 body {
     min-width: 1000px;
-    font-family: Fira Sans;
+    font-family: 'Abel', sans-serif;
     max-height: 1000px;
     background-color: #b4d6ad
 }
@@ -14,7 +14,7 @@ body {
 header {
     background-color: #5d8d5d;
     position: relative;
-    height: 130px;
+    height: 110px;
     padding: 0;
     margin-top: -8px;
     margin-left: -8px;
@@ -26,14 +26,14 @@ header > * {
 }
 
 header img {
-    height: 120px;
-    margin-top: 8px;
+    height: 110px;
+    /*margin-top: 8px;*/
     margin-left: 28px;
 }
 
 .nav {
-    margin-left: 950px;
-    margin-top: 20px;
+    margin-left: 63vw;
+    margin-top: 2vh;
 }
 
 .navbar {
@@ -46,7 +46,7 @@ list {
 }
 
 list a {
-    display: block;
+    display: inline block;
     color: #b4d6ad;
     text-align: center;
     padding: 14px 20px;
@@ -56,6 +56,7 @@ list a:hover:not(.active) {
     background-color: #507950;
     color: #d6ffce;
 }
+
 
 .active {
     background-color: #b4d6ad;
@@ -199,6 +200,89 @@ input[type=reset]:hover {
 .footer_text {
     color: #bfd6ad;
     text-align: center;
+}
+
+/*The profile css*/
+
+.navprof {
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 600px;
+}
+
+div button {
+    background-color: transparent;
+    border: 2px solid #72a75b;
+    font-size: 20px;
+    color: #31402f;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+.navprof button:hover {
+    background-color: #72a75b;
+    color: #a3d0b5;
+    text-decoration: underline;
+}
+
+/*personal information*/
+
+div.personal {
+    /*display: none;*/
+    width: 600px;
+    margin: auto;
+    background-color: #a3d0b5;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+div.personal img#prof {
+    margin: 10px 10px;
+    width: 120px;
+    padding: 0px;
+    float: left;
+}
+
+
+h1 {
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.menu img {
+    margin-right: 10px;
+    width: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.personal ul {
+    padding-top: 170px;
+}
+
+.personal li {
+    list-style-type: none
+}
+
+.personal li p {
+    display: inline;
+    font-size: 25px;
+}
+
+
+div .archived {
+    display: block;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    background-color: #a3d0b5;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 </style >
