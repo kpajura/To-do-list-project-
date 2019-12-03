@@ -5,11 +5,12 @@
 
 body {
     min-width: 1000px;
-    font-family: 'Abel', sans-serif;
+    font-family: Fira Sans;
     max-height: 1000px;
     background-color: #b4d6ad
 }
 
+/* ######################## Header ########################## */
 
 header {
     background-color: #5d8d5d;
@@ -25,20 +26,19 @@ header > * {
     position: absolute;
 }
 
+/* ################## Header logotype ##################### */
+
 header img {
-    height: 110px;
-    /*margin-top: 8px;*/
+    height: 100px;
+    margin-top: 8px;
     margin-left: 28px;
 }
 
+/* ################# Header Navigation Menu ################## */
+
 .nav {
     margin-left: 63vw;
-    margin-top: 2vh;
-}
-
-.navbar {
-    list-style-type: none;
-    background-color: #5d8d5d;
+    margin-top: 1vh;
 }
 
 list {
@@ -46,7 +46,7 @@ list {
 }
 
 list a {
-    display: inline block;
+    display: block;
     color: #b4d6ad;
     text-align: center;
     padding: 14px 20px;
@@ -56,7 +56,6 @@ list a:hover:not(.active) {
     background-color: #507950;
     color: #d6ffce;
 }
-
 
 .active {
     background-color: #b4d6ad;
@@ -70,13 +69,39 @@ a {
     color: #b3d5ac;
 }
 
-div {
-    font-size: 20px;
-}
+/* ######################### END ############################## */
 
 .home_text {
     text-align: center;
     margin-top: 150px;
+}
+
+/* ######################## Register Form ############################## */
+
+.test {
+
+    height: 10vh;
+    margin-top: 10%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    background-color: #5d8d5d;
+    padding: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    margin-left: 350px;
+    margin-top: 34px;
+}
+
+.container_login {
+    background-color: #5d8d5d;
+    padding: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    margin-left: 350px;
+    margin-top: 5%;
 }
 
 label {
@@ -89,8 +114,10 @@ label {
     padding: 20px;
 }
 
+/* ######################### Form input Bars ############################## */
+
 input {
-    width: 624px;
+    width: 43vw;
     padding: 10px;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -99,16 +126,29 @@ input {
     color: #b3d5ac;
 }
 
+/* ######################### Form buttons + hover ############################## */
+
 input[type=submit] {
     background-color: #507950;
     color: white;
     border: none;
     padding: 15px;
-    width: 640px;
+    width: 44.5vw;
+    font-family: Fira Sans;
+    font-size: 14px;
 }
 
 input[type=submit]:hover {
     background-color: #3d5d3d;
+}
+
+/* ######################### Already member? - text ############################## */
+
+.text_register {
+    font-family: abel;
+    font-size: 15px;
+    padding-left: 235px;
+    text-decoration: underline;
 }
 
 input[type=reset] {
@@ -117,6 +157,8 @@ input[type=reset] {
     border: none;
     padding: 15px;
     width: 640px;
+    font-family: Fira Sans;
+    font-size: 14px;
 
 }
 
@@ -129,19 +171,12 @@ input[type=reset]:hover {
     font-family: Fira Sans;
 }
 
-.container {
-    background-color: #5d8d5d;
-    padding: 20px;
-    width: 48%;
-    box-sizing: border-box;
-    margin-left: 350px;
-    margin-top: 34px;
-}
-
 .close:hover {
     background-color: #d6ffce;
     color: white;
 }
+
+/* ######################### Terms and conditions ############################## */
 
 .popup {
     position: relative;
@@ -187,6 +222,9 @@ input[type=reset]:hover {
     animation: fadeIn 1s;
 }
 
+
+/* ######################### Footer ############################## */
+
 .footer {
     position: fixed;
     left: 0;
@@ -200,89 +238,6 @@ input[type=reset]:hover {
 .footer_text {
     color: #bfd6ad;
     text-align: center;
-}
-
-/*The profile css*/
-
-.navprof {
-    margin: auto;
-    padding-left: 30px;
-    padding-top: 20px;
-    width: 600px;
-}
-
-div button {
-    background-color: transparent;
-    border: 2px solid #72a75b;
-    font-size: 20px;
-    color: #31402f;
-    text-transform: uppercase;
-    padding: 10px 30px;
-}
-
-.navprof button:hover {
-    background-color: #72a75b;
-    color: #a3d0b5;
-    text-decoration: underline;
-}
-
-/*personal information*/
-
-div.personal {
-    /*display: none;*/
-    width: 600px;
-    margin: auto;
-    background-color: #a3d0b5;
-    margin-top: 30px;
-    padding-bottom: 10px;
-}
-
-div.personal img#prof {
-    margin: 10px 10px;
-    width: 120px;
-    padding: 0px;
-    float: left;
-}
-
-
-h1 {
-    width: 200px;
-    float: left;
-    margin-left: 50px;
-    margin-top: 40px;
-}
-
-.menu img {
-    margin-right: 10px;
-    width: 50px;
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-
-.personal ul {
-    padding-top: 170px;
-}
-
-.personal li {
-    list-style-type: none
-}
-
-.personal li p {
-    display: inline;
-    font-size: 25px;
-}
-
-
-div .archived {
-    display: block;
-    width: 600px;
-    height: 500px;
-    margin: auto;
-    background-color: #a3d0b5;
-    margin-top: 30px;
-    padding-bottom: 10px;
 }
 
 </style >

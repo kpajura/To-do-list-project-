@@ -1,5 +1,7 @@
+var username = "";
+
 function resetFunction() {
-    document.getElementById("myForm").reset();
+    document.getElementById("regform").reset();
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -30,13 +32,13 @@ function checkCookie() {
         event.preventDefault();
     };
     var form = document.getElementById("regform");
+    var name = document.getElementById("usrname");
     form.addEventListener("submit", prevent_reload_1, true);
-
 
     var email = document.getElementById("email").value;
     var existingemail = getCookie(email);
     if (existingemail != "") {
-        window.alert(document.getElementById("usrname").value + " is already a registered user, please proceed to log in. ");
+        window.alert(existingemail + " is already a registered user, please proceed to log in. ");
         window.location.assign("login.html");
     } else {
         input_username = document.getElementById("usrname").value
@@ -45,8 +47,7 @@ function checkCookie() {
         window.location.assign("login.html");
     }
 }
-// Log in cookie check in index.html
-// This part is not working at the moment, after clicking submit. 
+
 
 function checkCookieLogin() {
     //Function to prevent the login page from reloading on submit.
@@ -60,8 +61,10 @@ function checkCookieLogin() {
     var email = document.getElementById("emaillogin").value;
     var cookieemail = getCookie(email);
     if (cookieemail != "") {
-        window.alert("Welcome!");
+        window.alert("Welcome  " + cookieemail);
+        username = cookieemail;
         window.location.assign("index.html");
+
 
         var usercookie = document.getElementById("usrname").value;
         var username = getCookie(usercookie);

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
 <head>
 
@@ -14,7 +15,7 @@
     <header>
         <img src="LOGO.png" alt="LOGO">
         <div class="nav">
-            <ul class="navbar">
+            <ul>
                 <list><a class="Active" href="index.html">HOME</a></list>
                 <list><a class="Active" href="login.html">LOG IN</a></list>
                 <list><a class="Active" href="register.html">REGISTER</a></list>
@@ -24,17 +25,23 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container_login">
         <form id="logform">
             <label for="email">Email</label>
-            <input type="text" id="emaillogin" name="email" required>
+            <input type="text" id="emaillogin" name="email" required placeholder="Enter your email here..">
 
             <label for="psw">Password</label>
-            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Enter your password here..">
+            <br>
+            <br>
 
-            <input type="submit" value="Log in" onclick="checkCookieLogin()">
 
+            <input class="login_button" type="submit" value="Log in" onclick="checkCookieLogin()">
         </form>
+
+        <div>
+            <a class="text_register" href="register.html"> Not a member? Register here! </a>
+        </div>
     </div>
 
     <section>

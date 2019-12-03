@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
 <head>
 
@@ -13,7 +14,7 @@
     <header>
         <img src="LOGO.png" alt="LOGO">
         <div class="nav">
-            <ul class="navbar">
+            <ul>
                 <list><a class="Active" href="index.html">HOME</a></list>
                 <list><a class="Active" href="login.html">LOG IN</a></list>
                 <list><a class="Active" href="register.html">REGISTER</a></list>
@@ -24,6 +25,12 @@
     </header>
 
     <div class="container">
+        <div>
+            <br>
+            <a class="text_register" href="login.html"> Already a member? Login here!</a>
+        </div>
+        <br>
+        <br>
         <form id="regform" action="index.html" name="myform">
             <label for="usrname">Username *</label>
             <input type="text" id="usrname" name="usrname" placeholder="Pick a username.." required>
@@ -79,8 +86,6 @@
 
     </section>
 
-    <script src="functions.js"></script>
-
     <div class="footer">
         <img class="copyright" src="photos/copyright.png" alt="copyright">
 
@@ -97,5 +102,8 @@
     </footer>
 
 </body>
+
+<script src="functions.js"></script>
+
 
 </html>
