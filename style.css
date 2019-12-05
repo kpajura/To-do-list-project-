@@ -1,243 +1,319 @@
-<style > * {
-    box-sizing: border-box;
-    margin: 0;
-}
+ * {
+     box-sizing: border-box;
+     margin: 0;
+ }
 
-body {
-    min-width: 1000px;
-    font-family: Fira Sans;
-    max-height: 1000px;
-    background-color: #b4d6ad
-}
-
-/* ######################## Header ########################## */
-
-header {
-    background-color: #5d8d5d;
-    position: relative;
-    height: 110px;
-    padding: 0;
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-header > * {
-    position: absolute;
-}
-
-/* ################## Header logotype ##################### */
-
-header img {
-    height: 100px;
-    margin-top: 8px;
-    margin-left: 28px;
-}
-
-/* ################# Header Navigation Menu ################## */
-
-.nav {
-    margin-left: 63vw;
-    margin-top: 1vh;
-}
-
-list {
-    float: right;
-}
-
-list a {
-    display: block;
-    color: #b4d6ad;
-    text-align: center;
-    padding: 14px 20px;
-}
-
-list a:hover:not(.active) {
-    background-color: #507950;
-    color: #d6ffce;
-}
-
-.active {
-    background-color: #b4d6ad;
-}
-
-a {
-    text-decoration: none;
-    font-size: 24px;
-    font-family: Abel;
-    padding: 2px;
-    color: #b3d5ac;
-}
-
-/* ######################### END ############################## */
-
-.home_text {
-    text-align: center;
-    margin-top: 150px;
-}
-
-/* ######################## Register Form ############################## */
-
-.test {
-
-    height: 10vh;
-    margin-top: 10%;
-    padding: 10px;
-    margin-left: 10px;
-}
-
-.container {
-    background-color: #5d8d5d;
-    padding: 20px;
-    width: 48%;
-    box-sizing: border-box;
-    margin-left: 350px;
-    margin-top: 34px;
-}
-
-.container_login {
-    background-color: #5d8d5d;
-    padding: 20px;
-    width: 48%;
-    box-sizing: border-box;
-    margin-left: 350px;
-    margin-top: 5%;
-}
-
-label {
-    color: #d6ffce;
-    font-family: Abel;
-    font-size: 18px;
-}
-
-.label .select:dropdown {
-    padding: 20px;
-}
-
-/* ######################### Form input Bars ############################## */
-
-input {
-    width: 43vw;
-    padding: 10px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    background-color: #507950;
-    border: none;
-    color: #b3d5ac;
-}
-
-/* ######################### Form buttons + hover ############################## */
-
-input[type=submit] {
-    background-color: #507950;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 44.5vw;
-    font-family: Fira Sans;
-    font-size: 14px;
-}
-
-input[type=submit]:hover {
-    background-color: #3d5d3d;
-}
-
-/* ######################### Already member? - text ############################## */
-
-.text_register {
-    font-family: abel;
-    font-size: 15px;
-    padding-left: 235px;
-    text-decoration: underline;
-}
-
-input[type=reset] {
-    background-color: #507950;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 640px;
-    font-family: Fira Sans;
-    font-size: 14px;
-
-}
-
-input[type=reset]:hover {
-    background-color: #3d5d3d;
-}
-
-::placeholder {
-    color: #b3d5ac;
-    font-family: Fira Sans;
-}
-
-.close:hover {
-    background-color: #d6ffce;
-    color: white;
-}
-
-/* ######################### Terms and conditions ############################## */
-
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    float: left;
-    margin-top: 20px;
-    padding: 4px;
-    text-decoration: underline;
-    font-size: 23px;
-    font-family: Abel;
-    padding: 2px;
-    color: #d6ffce;
-
-}
-
-.b {
-    display: inline-block;
-    font-size: 23px;
-    font-family: Abel;
-    color: #d6ffce;
-}
-
-.popup .popuptext {
-    visibility: hidden;
-    font-size: 12px;
-    width: 500px;
-    color: #d6ffce;
-    background-color: #507950;
-    text-align: center;
-    padding: 8px;
-    position: absolute;
-    margin-left: -50%;
-    z-index: 1;
-    bottom: 125%;
-}
-
-/* Toggle this class - hide and show the popup */
-
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
+ body {
+     min-width: 1000px;
+     font-family: 'Abel', sans-serif;
+     max-height: 1000px;
+     background-color: #b4d6ad
+ }
 
 
-/* ######################### Footer ############################## */
+ header {
+     background-color: #5d8d5d;
+     position: relative;
+     height: 110px;
+     padding: 0;
+     margin-top: -8px;
+     margin-left: -8px;
+     margin-right: -8px;
+ }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #5d8d5d;
+ header > * {
+     position: absolute;
+ }
 
-}
+ header img {
+     height: 110px;
+     /*margin-top: 8px;*/
+     margin-left: 28px;
+ }
 
-.footer_text {
-    color: #bfd6ad;
-    text-align: center;
-}
+ .nav {
+     margin-left: 63vw;
+     margin-top: 6vh;
+ }
 
-</style >
+ .navbar {
+     list-style-type: none;
+     background-color: #5d8d5d;
+ }
+
+ list {
+     float: right;
+ }
+
+ list a {
+     display: inline block;
+     color: #b4d6ad;
+     text-align: center;
+     padding: 14px 20px;
+ }
+
+ list a:hover:not(.active) {
+     background-color: #507950;
+     color: #d6ffce;
+ }
+
+
+ .active {
+     background-color: #b4d6ad;
+ }
+
+ a {
+     text-decoration: none;
+     font-size: 24px;
+     font-family: Abel;
+     padding: 2px;
+     color: #b3d5ac;
+ }
+
+ div {
+     font-size: 20px;
+ }
+
+ .home_text {
+     text-align: center;
+     margin-top: 150px;
+ }
+
+ label {
+     color: #d6ffce;
+     font-family: Abel;
+     font-size: 18px;
+ }
+
+ .label .select:dropdown {
+     padding: 20px;
+ }
+
+ input {
+     width: 43vw;
+     padding: 10px;
+     margin: 6px auto 16px auto;
+     /*
+     margin-top: 6px;
+     margin-bottom: 16px;
+*/
+     background-color: #507950;
+     border: none;
+     color: #b3d5ac;
+ }
+
+ input[type=submit] {
+     background-color: #507950;
+     color: white;
+     border: none;
+     padding: 15px;
+     width: 44.5vw;
+ }
+
+ input[type=submit]:hover {
+     background-color: #3d5d3d;
+ }
+
+ input[type=reset] {
+     background-color: #507950;
+     color: white;
+     border: none;
+     padding: 15px;
+     width: 44.5vw;
+
+ }
+
+ input[type=reset]:hover {
+     background-color: #3d5d3d;
+ }
+
+ ::placeholder {
+     color: #b3d5ac;
+     font-family: Fira Sans;
+ }
+
+ .container {
+     background-color: #5d8d5d;
+     padding: 20px;
+     width: 48%;
+     box-sizing: border-box;
+     margin: 34px auto 0 auto;
+ }
+
+ .close:hover {
+     background-color: #d6ffce;
+     color: white;
+ }
+
+ .popup {
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+     float: left;
+     margin-top: 20px;
+     padding: 4px;
+     text-decoration: underline;
+     font-size: 23px;
+     font-family: Abel;
+     padding: 2px;
+     color: #d6ffce;
+
+ }
+
+ .b {
+     display: inline-block;
+     font-size: 23px;
+     font-family: Abel;
+     color: #d6ffce;
+ }
+
+ .popup .popuptext {
+     visibility: hidden;
+     font-size: 12px;
+     width: 500px;
+     color: #d6ffce;
+     background-color: #507950;
+     text-align: center;
+     padding: 8px;
+     position: absolute;
+     margin-left: -50%;
+     z-index: 1;
+     bottom: 125%;
+ }
+
+ /* Toggle this class - hide and show the popup */
+
+ .popup .show {
+     visibility: visible;
+     -webkit-animation: fadeIn 1s;
+     animation: fadeIn 1s;
+ }
+
+
+ /*The profile css*/
+
+ .navprof {
+     margin: auto;
+     padding-left: 30px;
+     padding-top: 20px;
+     width: 600px;
+ }
+
+ div button {
+     background-color: transparent;
+     border: 2px solid #72a75b;
+     font-size: 20px;
+     color: #31402f;
+     text-transform: uppercase;
+     padding: 10px 30px;
+ }
+
+ .navprof button:hover {
+     background-color: #72a75b;
+     color: #a3d0b5;
+     text-decoration: underline;
+ }
+
+ /*personal information*/
+
+ div#personal {
+     display: none;
+     width: 600px;
+     margin: auto;
+     background-color: #a3d0b5;
+     margin-top: 30px;
+     padding-bottom: 10px;
+ }
+
+ div#personal img#prof {
+     margin: 10px 10px;
+     width: 120px;
+     padding: 0px;
+     float: left;
+ }
+
+
+ h1 {
+     width: 200px;
+     float: left;
+     margin-left: 50px;
+     margin-top: 40px;
+ }
+
+ .menu img {
+     margin-right: 10px;
+     width: 50px;
+     float: right;
+     margin-top: 10px;
+     margin-right: 10px;
+ }
+
+
+ #personal ul {
+     padding-top: 170px;
+ }
+
+ #personal li {
+     list-style-type: none
+ }
+
+ #personal li p {
+     display: inline;
+     font-size: 25px;
+ }
+
+
+ div#archived {
+     /*
+     display: none;
+*/
+     width: 600px;
+     height: 200px;
+     margin: auto;
+     background-color: #a3d0b5;
+     margin-top: 30px;
+     padding-bottom: 10px;
+ }
+
+
+
+
+
+ /*footer*/
+ .copyright {
+     height: 30px;
+     float: left;
+     margin-left: 50px;
+     margin-top: 20px;
+ }
+
+
+ .ftext {
+     float: left;
+     margin-left: 10px;
+     margin-top: 19px;
+     font-size: 25px;
+ }
+
+ .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 70px;
+     background-color: #5d8d5d;
+
+ }
+
+ .footer_text {
+     color: #bfd6ad;
+     text-align: center;
+ }
+
+ .social {
+     height: 60px;
+     float: right;
+     margin-right: 20px;
+     margin-left: 20px;
+     margin-top: 7px;
+ }
