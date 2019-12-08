@@ -1,6 +1,164 @@
 .taskMain
+{
 
+	width: 100%;	
+	height: 100%;
+}
+
+.taskHeader
+{
+	width: 100%;
+}
+
+
+
+#mainKanban
+{
+	padding: 1%;
+	display:flex;
+
+}
+
+.kanban-container
+{
+	justify-content: space-between;
+}
+#addBoardContainer
+{
+	padding: 1%;
+}
+
+
+#boardForm
+{
+	display: none;
+	margin-top: 1%;
+
+}
+
+#pickColor
+{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+/*
+.info
+{
+background-color: red;
+}*/
+
+.kanban-board
+{
+	border: 3px solid #72a75b;
+	padding: 1%;
+
+}
+
+.info
 {
 	background-color: red;
-	width: 99%;
+	cursor: grab; 
+
 }
+
+.taskList
+{
+	cursor: grab; 
+}
+
+.taskHeader
+{
+	border-bottom: 2px solid #72a75b;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+
+.kanban-title-button
+{
+	float: right;
+	position: absolute;
+	left: 55%;
+	background-color: #507950;
+	width: 40%;
+	padding: 1%;
+}
+
+#getBoardName
+{
+	width: 200px;
+}
+
+#pickColor
+{
+	width: 10%;
+	padding:0;
+	margin-bottom: 2%;
+}
+
+.form-control
+{
+	width: 100%;
+}
+.form-group
+{
+	width: 100%;
+	align-content: center;
+}
+
+#CancelBtn
+{
+	float:right;
+}
+
+/*Other Styling Stuff*/
+
+/*Header*/
+
+/*
+
+header {
+background-color: #5d8d5d;
+position: relative;
+height: 110px;
+padding: 0;
+margin-top: -8px;
+margin-left: -8px;
+margin-right: -8px;
+}
+
+header > * {
+position: absolute;
+}
+
+header img {
+height: 110px;
+margin-top: 8px;
+margin-left: 28px;
+}
+
+.nav {
+margin-left: 63vw;
+margin-top: 6vh;
+}
+
+.navbar {
+list-style-type: none;
+background-color: #5d8d5d;
+}
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+body {
+min-width: 1000px;
+font-family: 'Abel', sans-serif;
+max-height: 1000px;
+background-color: #b4d6ad
+}
+*/
