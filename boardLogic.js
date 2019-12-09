@@ -41,14 +41,14 @@ $(document).ready(function () {
 
 		],
         addItemButton: true,
-        buttonContent: '+ Add Task',
+        buttonContent: '+ Add Item',
         buttonClick: function (el, boardId) {
             console.log(el);
             console.log(boardId);
             var formItem = document.createElement("form");
             formItem.setAttribute("class", "itemform");
             formItem.innerHTML =
-                '<div class="form-group"><input class="form-control" type="text" autofocus></div><div class="form-group"><button type="submit" class="btn btn-primary btn-xs pull-right">Add Task</button><button type="button" id="CancelBtn" class="btn btn-default btn-xs pull-right">Cancel</button></div>';
+                '<div class="form-group"><input class="form-control" type="text" autofocus></div><div class="form-group"><button type="submit" class="btn btn-primary btn-xs pull-right">Add Item</button><button type="button" id="CancelBtn" class="btn btn-default btn-xs pull-right">Cancel</button></div>';
 
             KanbanMain.addForm(boardId, formItem);
             formItem.addEventListener("submit", function (e) {
