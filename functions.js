@@ -81,3 +81,20 @@ function popFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+
+//the function to show personal box on the website
+function showPersonal() {
+    x = document.getElementById("personal")
+    y = document.getElementById("archived")
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+//the function to show archived box on the website
+function showArchived() {
+    x = document.getElementById("personal")
+    y = document.getElementById("archived")
+    x.style.display = "none";
+    y.style.display = "block";
+}

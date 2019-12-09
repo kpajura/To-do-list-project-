@@ -3,102 +3,109 @@
 
 
 
-	<head>
+<head>
 
-		<meta charset="UTF-8">
-		<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-		<title>Task Manager</title>
-
-
-		<link rel = "stylesheet" href = "taskManagerStyle.css">
-		<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <title>Task Manager</title>
 
 
-		<!--Jquery-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="taskManagerStyle.css">
+    <link rel="stylesheet" href="style.css">
 
 
-		<!--Library Dependencies-->
-		<script src = "jkanban-master/dist/jkanban.min.js"></script>
-		<link rel = "stylesheet" href = "jkanban-master/dist/jkanban.min.css">
-
-		<!--Javascript for managing the boards-->
-		<script src = "boardLogic.js"></script>
+    <!--Jquery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 
 
+    <!--Library Dependencies-->
+    <script src="jkanban-master/dist/jkanban.min.js"></script>
+    <link rel="stylesheet" href="jkanban-master/dist/jkanban.min.css">
 
-
-	</head>
-
-
-	<header>
-		<img src="logo.png" alt="LOGO">
-		<div class="nav">
-			<ul>
-				<list><a class="Active" href="index.html">HOME</a></list>
-				<list><a class="Active" href="login.html">LOG IN</a></list>
-				<list><a class="Active" href="register.html">REGISTER</a></list>
-				<list><a class="Active" href="#">PROFILE</a></list>
-
-			</ul>
-		</div>
-	</header>
-
-
-
-	<body>
+    <!--Javascript for managing the boards-->
+    <script src="boardLogic.js"></script>
 
 
 
 
-		<div class = "taskMain">
-
-			<div class = "taskHeader">
-
-				<div id = "addBoardContainer">
-
-					<button id="addBoardStart">Add new board</button>
+</head>
 
 
-
-					<div id = "boardForm">
-
-						<input type = text id = "getBoardName" placeholder = "Enter Board Name">
-
-						<br>
-						Select Board Color:
-
-						<input type = "color" id = "pickColor">
-
-						<br>
-
-						<button type = "submit" id = "addBoard">Add Board</button>
-						<button type = "button" id = "cancelAddBoard">Cancel</button>
+<header>
+    <img src="logo.png" alt="LOGO">
+    <div class="nav">
+        <ul>
+            <list><a class="Active" href="taskManager.html">TASKS</a></list>
+            <list><a class="Active" href="profile.html">PROFILE</a></list>
+            <list><a class="Active" href="login.html">LOG OUT</a></list>
+        </ul>
+    </div>
+</header>
 
 
 
-					</div>
-
-
-				</div>
-
-
-
-			</div>
-
-
-			<div id="mainKanban">		
-			</div>
-
-
-		</div>
+<body>
 
 
 
 
+    <div class="taskMain">
+
+        <div class="taskHeader">
+
+            <div id="addBoardContainer">
+
+                <button id="addBoardStart">Add new board</button>
 
 
-	</body>
+
+                <div id="boardForm">
+
+                    <input type=text id="getBoardName" placeholder="Enter Board Name">
+
+                    <br>
+                    Select Board Color:
+
+                    <input type="color" id="pickColor">
+
+                    <br>
+
+                    <button type="submit" id="addBoard">Add Board</button>
+                    <button type="button" id="cancelAddBoard">Cancel</button>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div id="mainKanban">
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <img class="copyright" src="photos/copyright.png" alt="copyright">
+        <p class="ftext">TEAM 4</p>
+        <div>
+            <a href="https://www.facebook.com"> <img class="social" src="photos/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img class="social" src="photos/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com"> <img class="social" id="bn" src="photos/twitter.png" alt="twitter"></a>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
 
 
 
